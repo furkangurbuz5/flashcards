@@ -1,0 +1,18 @@
+<h1>Decks</h1>
+
+@for (deck of decks; track deck.id) {
+  <article>
+    <h2>{{ deck.name }}</h2>
+    <p>{{ deck.description }}</p>
+    <dl>
+      <div>
+        <dt>Cards:</dt>
+        <dd>{{ deck.cardCount }}</dd>
+      </div>
+      <div>
+        <dt>Created:</dt>
+        <dd>{{ deck.creationDate }}</dd>
+      </div>
+    </dl>
+  </article>
+}
