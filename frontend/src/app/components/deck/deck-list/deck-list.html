@@ -1,8 +1,8 @@
 <h1>Decks</h1>
 
-@for (deck of decks; track deck.id) {
+@for (deck of (decks$ | async); track deck.id) {
   <article>
-    <h2>{{ deck.name }}</h2>
+    <h2><a [routerLink]="['/deck', deck.id]">{{ deck.name }}</a></h2>
     <p>{{ deck.description }}</p>
     <dl>
       <div>

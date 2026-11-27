@@ -1,4 +1,4 @@
-//TODO check if spaced repetition data is needed
+//TODO check if spaced repetition needs specific data per card, or if the card needs to hold this data. 
 
 export interface Flashcard {
     id: string;

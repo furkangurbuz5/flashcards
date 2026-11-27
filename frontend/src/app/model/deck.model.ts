@@ -1,3 +1,4 @@
+import { Flashcard } from "./flashcard.model";
 
 export interface Deck {
     id: string;
@@ -5,4 +6,5 @@ export interface Deck {
     description: string;
     cardCount: number;
     creationDate: Date;
+    cards: Flashcard[];
 }
